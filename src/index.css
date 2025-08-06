@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap");
+
+:root {
+  color: rgb(178, 17, 17);
+  color: rgb(50, 51, 56);
+}
+
+body {
+  font-family: "Libertinus Serif", serif;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  all: unset;
+  padding: 8px 18px;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.3);
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
+}
+
+button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 70px;
+  background-color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.Product {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  min-height: 80vh;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+}
+
+.Content {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Content h1 {
+  margin-top: 10px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0;
+}
+
+.Content p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+.Button {
+  display: flex;
+  gap: 20px;
+}
+
+.Button button {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.Button button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
+}
+
+.Shopping {
+  margin-top: 30px;
+}
+
+.Shopping p {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1rem;
+}
+
+.Shopping img {
+  height: 40px;
+  width: auto;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.2));
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: calc(110vh - 100px);
+}
+
+.image img {
+  width: 50%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+footer {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
